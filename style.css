@@ -26,6 +26,8 @@ nav{
     align-items: center;
 
     position: fixed;
+
+    z-index: 100;
 }
 
 nav div{
@@ -98,14 +100,25 @@ section a{
     margin: 10px;
 }
 
-.div-img{
+.div-img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 
-.div-img img{
+.div-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+}
+
+.img-v {
+    aspect-ratio: 1 / 2;
+}
+
+.img-v img {
+    object-position: 50% 0%; 
 }
 
 footer{
@@ -121,6 +134,23 @@ footer{
 footer div{
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.back-image{
+    background-color: aqua;
+    background-image: url('./img/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 20px;
+}
+
+.back-image h2, .back-image h3, .back-image p{
+    text-shadow:
+        -1px -1px 0 aliceblue,
+         1px -1px 0 aliceblue,
+        -1px  1px 0 aliceblue,
+         1px  1px 0 aliceblue;
 }
 
 
