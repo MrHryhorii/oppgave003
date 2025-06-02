@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    width: 100svw;
+    width: 100%;
 }
 
 nav{
@@ -19,6 +19,7 @@ nav{
     border-radius: 2px;
     border-color: blue;
     border-style: double;
+    background-color: darkslategray;
 
     display: flex;
     justify-content: space-between;
@@ -61,4 +62,55 @@ a{
     color: aliceblue;
     width: 50%;
     margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+main{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+
+    scroll-margin-top: 70px;
+}
+
+section a{
+    color: darkslategray;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.planet{
+    flex-basis: 20%;
+    flex-shrink: 0;
+    min-width: 200px;
+
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.div-img{
+    width: 100%;
+}
+
+.div-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 720px) {
+
+    
+
 }
