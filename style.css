@@ -108,6 +108,21 @@ section a{
     object-fit: cover;
 }
 
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: darkslategray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 @media (max-width: 720px) {
 
