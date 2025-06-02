@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: bisque;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100svw;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+
+    border-radius: 2px;
+    border-color: blue;
+    border-style: double;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+}
+
+nav div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-search{
+    display: flex;
+}
+
+.nav-search p{
+    color: aliceblue;
+    margin-right: 20px;
+}
+
+a{
+    color: aliceblue;
+}
+
+.hero{
+    width: 100%;
+    height: 300px;
+    background-image: url('./img/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero p{
+    color: aliceblue;
+    width: 50%;
+    margin-bottom: 20px;
+}
