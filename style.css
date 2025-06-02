@@ -203,6 +203,12 @@ footer div {
 }
 
 /* === Responsive === */
+@media (max-width: 916px) {
+    .planet {
+        flex-basis: 40%;
+    }
+}
+
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
