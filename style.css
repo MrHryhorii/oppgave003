@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 /* === Navigation === */
 nav {
-  height: 70px;
+  min-height: 70px;
   width: 100%;
   background-color: darkslategray;
   border-radius: 2px;
@@ -32,6 +32,8 @@ nav {
   position: fixed;
   z-index: 100;
   padding: 0 20px;
+
+  height: fit-content;
 }
 
 nav div {
@@ -91,10 +93,6 @@ section {
 .hero p, .hero-2 p {
   color: aliceblue;
   width: 50%;
-  text-shadow: -1px -1px 0 darkslategray,
-               1px -1px 0 darkslategray,
-              -1px  1px 0 darkslategray,
-               1px  1px 0 darkslategray;
 }
 
 .hero-2 {
@@ -104,7 +102,7 @@ section {
 /* === Section === */
 main {
   width: 100%;
-  background-color: aliceblue;
+  background-color: #0d1b2a;
 }
 
 section {
@@ -129,15 +127,6 @@ section a {
   background-size: cover;
   background-color: aqua;
   padding: 20px;
-}
-
-.back-image h2,
-.back-image h3,
-.back-image p {
-  text-shadow: -1px -1px 0 aliceblue,
-               1px -1px 0 aliceblue,
-              -1px  1px 0 aliceblue,
-               1px  1px 0 aliceblue;
 }
 
 .planet a {
@@ -179,7 +168,8 @@ section a {
   min-width: 200px;
   margin-top: 10px;
   padding: 10px;
-  background-color: white;
+  background-color: #183d5d;
+  color: #e0f4ff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -195,8 +185,10 @@ section a {
 
 .flex-column .planet .div-img {
   max-width: 300px;
+  max-height: 300px;
   margin-right: 20px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .div-img {
@@ -252,10 +244,21 @@ footer div {
   margin-right: 20px;
 }
 
+footer p{
+  margin-bottom: auto;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 /* === Responsive === */
 @media (max-width: 916px) {
     .planet {
         flex-basis: 40%;
+    }
+
+    footer{
+      height: fit-content;
     }
 }
 
