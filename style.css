@@ -177,7 +177,7 @@ section a {
 
 /* === Planet Card === */
 .planet {
-  flex-basis: 20%;
+  flex-basis: 22%;
   flex-shrink: 0;
   min-width: 200px;
   margin-top: 10px;
@@ -286,6 +286,16 @@ footer p{
 
   section{
     scroll-margin-top: 90px;
+  }
+
+  #a4 .flex-column .planet{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero p, .hero-2 p{
+    width: 75%;
   }
 }
 
