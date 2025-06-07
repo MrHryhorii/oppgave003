@@ -74,9 +74,11 @@ p {
   line-height: 1.6;
   margin-bottom: 16px;
 }
+
 section {
   padding: 40px 24px;
 }
+
 .hero p, .hero-2 p {
   font-size: 1.2rem;
   line-height: 1.6;
