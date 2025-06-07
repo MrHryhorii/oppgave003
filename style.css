@@ -5,13 +5,18 @@
 }
 
 html {
-  background-color: bisque;
+  background-color: #0d1b2a;
   scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #c0e0f7;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
 }
 
 /* === Navigation === */
@@ -43,6 +48,22 @@ nav div {
 .nav-search p,
 a {
   color: aliceblue;
+}
+
+a {
+  color: #ffcc00;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+section {
+  padding: 40px 24px;
+}
+.hero p, .hero-2 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* === Hero Sections === */
@@ -91,6 +112,11 @@ section {
   min-height: 300px;
   padding: 20px;
   scroll-margin-top: 70px;
+
+  background-color: #102a43;
+  border-radius: 12px;
+  margin: 16px auto;
+  max-width: 1200px;
 }
 
 section a {
@@ -112,6 +138,21 @@ section a {
                1px -1px 0 aliceblue,
               -1px  1px 0 aliceblue,
                1px  1px 0 aliceblue;
+}
+
+.planet a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 12px;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.planet a:hover {
+  background-color: #ffaa00;
 }
 
 /* === Layout Flex === */
